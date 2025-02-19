@@ -12,8 +12,8 @@ Is a form of training data poisoning, where an attacker intentionally alters the
  - Attack Objective: When the model is trained on the poisoned data, it may produce incorrect predictions or perform poorly on test data.
 
 # Workflow in project:
- - Train the Model: Train a deep learning model **(ResNet32)** on clean (unaltered) training data.
- - Attack the Model: Apply a Label Flipping Attack by modifying the labels of a subset of the training data.
- - Apply Security Machine Learning **(Defensive Distillation; Gradient Masking)**: Implement security-enhanced ML techniques (e.g., adversarial training, robust learning, or anomaly detection) to counteract the attack. DefensiveDistillation GradientMasking
- - Train on Attacked Data: Retrain the model using the attacked dataset with security measures applied.
- - Compare and Visualize: Evaluate the performance of the original, attacked, and secured models using metrics like accuracy, precision, recall, F1-score, and visualize differences through confusion matrices, loss curves, or decision boundary plots.
+ 1. Train the Model: Train a deep learning model **(ResNet32)** on clean (unaltered) training data.
+ 2. Attack the Model: Apply a Label Flipping Attack by modifying the labels of a subset of the training data.
+ 3. Apply Security Machine Learning **(Defensive Distillation; Gradient Masking)**: Implement security-enhanced ML techniques (e.g., adversarial training, robust learning, or anomaly detection) to counteract the attack. DefensiveDistillation GradientMasking
+ 4. Train on Attacked Data: Retrain the model using the attacked dataset with security measures applied.
+ 5. Compare and Visualize: Evaluate the performance of the original, attacked, and secured models using metrics like accuracy, precision, recall, F1-score, and visualize differences through confusion matrices, loss curves, or decision boundary plots.
